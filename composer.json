@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php": "~7.1",
+        "php": ">=7.1",
         "silverstripe/framework": "~4.3",
         "silverstripe/vendor-plugin": "^1.0"
     },
@@ -52,5 +52,11 @@
 		"silbinarywolf/silverstripe-phpstan": "self.version"
 	},
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
+        }
+    }
 }
